@@ -9,7 +9,7 @@ Trabajas como analista para el operador de telecomunicaciones Megaline. La empre
 
 Vas a realizar un análisis preliminar de las tarifas basado en una selección de clientes relativamente pequeña. Tendrás los datos de 500 clientes de Megaline: quiénes son los clientes, de dónde son, qué tarifa usan, así como la cantidad de llamadas que hicieron y los mensajes de texto que enviaron en 2018. Tu trabajo es analizar el comportamiento de los clientes y determinar qué tarifa de prepago genera más ingresos. Más adelante, encontrarás en las instrucciones del proyecto cuáles son exactamente los aspectos del comportamiento de los clientes que debes analizar. Determinar qué plan, en promedio, aporta más ingresos es una cuestión que se abordará mediante pruebas estadísticas. Más adelante encontrarás más información al respecto en la sección de instrucciones del proyecto.
 
-El propósito del proyecto es aplicar los conocimientos adquiridos en los sprints en un caso lo más real posible, en este caso para determinar una decisión de negocio basada en el ánalisis estadístico de un conjunto de datos para elegir el plan que genera mayores ingresos a Megaline y dar prioridad en la publicidad del que resulte.
+El objetivo es determinar una decisión de negocio basada en el ánalisis estadístico de un conjunto de datos para elegir el plan que genera mayores ingresos a Megaline y dar prioridad en la publicidad del que resulte.
 
 Se planea:
 
@@ -89,3 +89,17 @@ En este proyecto, trabajarás con cinco tablas diferentes.
 - usd_per_message: precio por SMS tras exceder los límites del paquete.
 - usd_per_gb: precio por gigabyte de los datos extra tras exceder los límites del paquete (1 GB = 1024 megabytes).
 
+
+
+
+## Conclusiones
+
+El plan surf, en general, dobla al plan ultimate en cuestión de ingresos, duración de llamadas, mensajes, GB utilizados.
+
+Se utiliza una prueba bilateral ya que no se sabe con certeza si la sdiferencia es significativa en la dirección positiva o negativa.
+
+El valor p indica que los ingresos promedio para los dos planes son diferentes, ya que existe un .000002 % de probabilidad de obtener aleatoriamente una diferencia de ese tamaño o mayor. Esta probabilidad es muy baja y se pude concluir que existe una diferencia significativa entre los ingresos promedio por plan.
+
+Para el área de NY-NJ vs el resto de regiones, el valor p que los ingresos promedio son diferentes. Existe un 4.35% de probabilidad obtener aleatoriamente una diferencia de ese tamaño o mayor. Esta probabilidad es considerablemente cercana a nuestro nivel de significancia estadística (5%), por lo tanto se concluye que existe una diferencia moderada entre los ingresos promedio de el área de NY-NJ y el resto de regiones.
+
+Sin duda, el plan Surf, es el ideal para promocionar más, ya que los usuarios mayormente se exceden de sus límites, y a pesar de ser más barato que el ultimate, muchos clientes terminan pagando de más por los recargos de sus excesos, lo que son más ingresos para la Megaline.
